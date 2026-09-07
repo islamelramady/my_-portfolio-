@@ -1057,8 +1057,9 @@ body{
     text-decoration: none;
     border-radius: 8px;
     position: absolute;
-    left: 12px;
-    bottom: 16px;
+    top: 90%;
+    left: 50%;
+    transform: translatex(-50%);
     padding: 9px 14px;
     border: none;
     background-color: #fff1ed;
@@ -1066,6 +1067,7 @@ body{
     display: inline-block;
     font-size: 12px;
     z-index: 2;
+    text-align: center;
 }
 .news-a:hover{
     background-color: #FF6B4A;
