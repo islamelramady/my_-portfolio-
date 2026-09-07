@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>eslam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/all.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -8,60 +9,78 @@
 <body>
     <!-- header section -->
     <div class="header">
-        <a class="icona" href="#"><i class="fa-solid fa-house"></i></a>
-        <div class="searchbox">
-            <input type="text" placeholder="search.">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div><!-- //search box -->
-        <ul class="list">
-            <li class="li1"><a href="#">home</a></li>
-            <li class="li1"><a href="#">Projects</a></li>
-            <li class="li1"><a href="#">About</a></li>
-            <li class="li1"><a href="#">Contact</a></li>
-            <li class="dropdown"><a href="#">Blog</a>
-                <ul class="dropdown-menu">
-                    <li class="li1"><a href="#">Web Dev Tips</a></li>
-                    <li class="li1"><a href="#">Career Journey</a></li>
-                    <li class="li1"><a href="#">Tutorials</a></li>
-                </ul><!-- //dropdown menu -->
-            </li><!-- //dropdown -->
-            <li class="li1"><a href="#">Skills</a></li>
-            <li class="li1"><a href="#">Resume</a></li>
-        </ul>
+        <div class="header-inner">
+            <a class="brand" href="#" aria-label="Eslam Elramady home">
+                <span class="brand-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="brand-name">Eslam<span>.</span></span>
+            </a>
+            <div class="searchbox">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search..." aria-label="Search">
+            </div><!-- //search box -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="list">
+                    <li class="li1"><a class="active" href="#">Home</a></li>
+                    <li class="li1"><a href="#">Projects</a></li>
+                    <li class="li1"><a href="#">About</a></li>
+                    <li class="li1"><a href="#">Contact</a></li>
+                    <li class="dropdown"><a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="li1"><a href="#">Web Dev Tips</a></li>
+                            <li class="li1"><a href="#">Career Journey</a></li>
+                            <li class="li1"><a href="#">Tutorials</a></li>
+                        </ul><!-- //dropdown menu -->
+                    </li><!-- //dropdown -->
+                    <li class="li1"><a href="#">Skills</a></li>
+                    <li class="li1"><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <!-- /header section -->
     <div class="home">
         <div class="home-overlay">
             <div class="home-content">
-                <h2 class="home-title">hi, i'm <span class="name-highlight">islam elramady</span></h2>
+                <span class="home-kicker"><i class="fa-solid fa-circle"></i> Available for new projects</span>
+                <h1 class="home-title">Building digital <span class="name-highlight">experiences</span> that matter.</h1>
                 <p class="home-p">Front-end & back-end web developer building clean, functional web experiences.</p>
-                <a href="https://github.com/eslamelramady?tab=projects" target="_blank"><button class="home-statred">view my work</button></a>
-                <a href="https://wa.me/201558315270" target="_blank"><button class="home-learn">contact me</button></a>
+                <div class="home-actions">
+                    <a class="home-button home-statred" href="https://github.com/eslamelramady?tab=projects" target="_blank">View my work <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="home-button home-learn" href="https://wa.me/201558315270" target="_blank">Let's talk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="home-meta">
+                    <span><i class="fa-solid fa-location-dot"></i>Elmahala, Tanta</span>
+                    <span><i class="fa-solid fa-code"></i> Full-stack developer</span>
+                </div>
             </div><!-- //home-content -->
         </div><!-- //home-overlay -->
     </div><!-- //home-section -->
     <!-- welcome section -->
     <div class="welcome-container">
-     <h2 class="welcome-title">What I Do</h2>
-    <div class="welcome-line"></div>
+        <div class="welcome-heading">
+            <span class="section-eyebrow">My expertise</span>
+            <h2 class="welcome-title">What I do</h2>
+            <p class="welcome-subtitle">I turn ideas into reliable, easy-to-use digital products.</p>
+            <div class="welcome-line"></div>
+        </div>
         <div class="welcome-parent">
             <div class="welcome-div1">
                 <i class="fa-solid fa-code"></i>
                 <h2 class="welcome-h2">Front-End</h2>
                 <p>Building clean, well-structured interfaces with HTML, CSS and JavaScript.</p>
-                <a href="#">read more</a>
+                <a href="#">Explore service <i class="fa-solid fa-arrow-right"></i></a>
             </div><!-- /welcome-div1 -->
             <div class="welcome-div2">
                 <i class="fa-solid fa-server"></i>
                 <h2 class="welcome-h2">Back-End</h2>
                 <p>Building the logic and data layer that keeps a site running reliably.</p>
-                <a href="#">read more</a>
+                <a href="#">Explore service <i class="fa-solid fa-arrow-right"></i></a>
             </div><!-- /welcome-div2 -->
             <div class="welcome-div3">
                 <i class="fa-solid fa-laptop-code"></i>
                 <h2 class="welcome-h2">Maintainable Code</h2>
                 <p>Writing code that's easy to read, extend, and hand off to other developers.</p>
-                <a href="#">read more</a>
+                <a href="#">Explore service <i class="fa-solid fa-arrow-right"></i></a>
             </div><!-- /welcome-div3 -->
         </div><!-- welcomep-parent -->
     </div><!-- //welcome-container -->
@@ -129,8 +148,12 @@
         </div><!-- /featured-container -->
     </div><!-- /featured-big-container -->
     <div class="offer-container">
-        <div class="welcome-title">what we offer</div>
-        <div class="welcome-line"></div>
+        <div class="offer-heading">
+            <span class="section-eyebrow">How I can help</span>
+            <h2 class="welcome-title">What I offer</h2>
+            <p class="offer-subtitle">Practical solutions built around your goals, your users, and your next big idea.</p>
+            <div class="welcome-line"></div>
+        </div>
         <div class="offer-parent">
             <div class="offer-child offer-child1">
                 <div class="offer-div offer-div4">
