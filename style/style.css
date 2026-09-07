@@ -287,7 +287,7 @@ body{
 }
 .welcome-heading{
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 56px;
 }
 .section-eyebrow{
     color: #ff6b4a;
@@ -307,17 +307,17 @@ body{
     width: 54px;
     height: 4px;
     background-color: #FF6B4A;
-    margin: 22px auto 0;
+    margin: 18px auto 0;
     border-radius: 5px;
 }
 .welcome-container{
     width: min(90%, 1180px);
-    margin: 115px auto 125px;
+    margin: 96px auto 80px;
 }
 .welcome-parent{
     width:100%;
     display: flex;
-    gap: 22px;
+    gap: 24px;
 }
 .welcome-parent div{
     width: 33.333%;
@@ -397,7 +397,7 @@ body{
 .featured-big-container{
     width: 100%;
     height: auto;
-    padding: 90px 0 105px;
+    padding: 80px 0;
     background: #f7f8fc;
 }
 .featured-container{
@@ -406,7 +406,7 @@ body{
     margin: 0 auto;
 }
 .featured-title{
-    margin-bottom: 48px;
+    margin-bottom: 34px;
 }
 .featured-parent{
     display: grid;
@@ -504,10 +504,10 @@ body{
 .offer-container{
     width: min(90%, 1180px);
     height: auto;
-    margin: 115px auto;
+    margin: 80px auto;
 }
 .offer-heading{
-    margin-bottom: 48px;
+    margin-bottom: 36px;
     text-align: center;
 }
 .offer-heading .welcome-title{ margin: 10px 0 12px; }
@@ -574,7 +574,7 @@ body{
 .choose-big-container{
     width: 100%;
     height: auto;
-    margin: 110px auto 0;
+    margin: 80px auto 0;
     background: #f7f8fc;
 }
 .choose-container{
@@ -739,7 +739,7 @@ body{
 /* pricing-section */
 .pricing-container{
     width: min(90%, 1180px);
-    margin: 115px auto;
+    margin: 80px auto;
 }
 .pricing-parent{
     display: grid;
@@ -889,7 +889,7 @@ body{
 /*   team----------------section */
 .team-container{
     width: min(90%, 1180px);
-    margin: 0 auto 115px;
+    margin: 20px auto 80px;
 }
 .team-parent{
     display: grid;
@@ -969,13 +969,13 @@ body{
     transition: 1s;
 }
 .team-item:hover .team-info p{
-    color:#ffffff
+    color:#d14f13
 }
 
 /*  //////news-section */
 .news-container{
     width: min(90%, 1180px);
-    margin: 0 auto 115px;
+    margin: 20px auto 80px;
 }
 .news-parent{
     display: grid;
@@ -1025,9 +1025,6 @@ body{
     color: #8a91a2;
     font-size: 11px;
 }
-/* NOTE: this class doesn't match anything else in the CSS ("socila2" looks
-   like a typo for "social2") — double-check the class name in your HTML,
-   left untouched in case it's used as-is somewhere. */
 .news-socila2{
     margin:0 5%;
 }
@@ -1046,11 +1043,6 @@ body{
     color: #101d43;
     height: auto;
     line-height: 1.3;
-}
-/* NOTE: ".news-title" isn't defined/used anywhere else — check whether your
-   HTML actually uses this class, otherwise this rule never fires. */
-.news-item:hover .news-title{
-    color: #fff;
 }
 .news-item p{
     line-height: 1.7;
@@ -1112,8 +1104,8 @@ body{
     width: 42px;
     height: 42px;
     border-radius: 50px;
-    background: rgba(255, 255, 255, .12);
     font-size: 20px;
+    background-color: #1F2937;
     color: #fff;
 }
 .footer-list li a{
@@ -1174,7 +1166,7 @@ body{
     }
     .offer-container{
         height: auto;
-        margin: 120px auto;
+        margin: 80px auto;
     }
     .offer-child{
         height: auto;
@@ -1189,7 +1181,7 @@ body{
     }
     .choose-big-container{
         height: auto;
-        margin: 100px auto;
+        margin: 80px auto;
     }
     .choose-container{
         margin: 0 auto;
@@ -1211,7 +1203,7 @@ body{
         margin: 15px auto 0;
     }
     .pricing-container{
-        margin: 140px auto;
+        margin: 90px auto;
     }
     .pricing-parent{
         display: flex;
@@ -1227,7 +1219,7 @@ body{
     .image-container{
         height: auto;
         min-height: 330px;
-        margin: 100px auto;
+        margin: 80px auto;
     }
     .image-parent{
         position: static;
@@ -1240,13 +1232,13 @@ body{
         gap: 42px 24px;
     }
     .image-2-container{
-        margin: 140px auto;
+        margin: 80px auto;
     }
     .team-container{
-        margin: 50px auto 140px;
+        margin: 50px auto 80px;
     }
     .news-container{
-        margin-bottom: 140px;
+        margin-bottom: 80px;
     }
 }
 
@@ -1304,6 +1296,7 @@ body{
     .image-2-container{
         height: auto;
         min-height: 570px;
+        margin: 80px auto;
     }
     .image-2-parent{
         position: static;
