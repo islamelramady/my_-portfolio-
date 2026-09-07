@@ -22,9 +22,9 @@ body{
     width: min(94%, 1320px);
     min-height: 72px;
     margin: 0 auto;
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 28px;
 }
 .brand{
     display: flex;
@@ -51,42 +51,34 @@ body{
 .brand-name span{
     color: #ff6b4a;
 }
-.searchbox{
-    width: 220px;
-    height: 40px;
-    position: relative;
-    flex-shrink: 0;
-}
-.searchbox input{
-    width: 100%;
-    height: 40px;
-    padding: 0 14px 0 38px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    outline: none;
-    background: rgba(255, 255, 255, 0.08);
+.header-cta{
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
     color: #fff;
-    font-size: 14px;
-    transition: .25s ease;
+    background: #ff6b4a;
+    border: 1px solid #ff6b4a;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(255, 107, 74, .2);
+    transition: background .25s ease, transform .25s ease;
 }
-.searchbox input::placeholder{
-    color: rgba(255, 255, 255, 0.58);
+.header-cta:hover,
+.header-cta:focus-visible{
+    background: #e9573b;
+    transform: translateY(-2px);
 }
-.searchbox input:focus{
-    border-color: #ff6b4a;
-    background: rgba(255, 255, 255, 0.12);
-    box-shadow: 0 0 0 3px rgba(255, 107, 74, 0.12);
-}
-.searchbox i{
-    position: absolute;
-    left: 14px;
-    top: 12px;
-    color: #ff9078;
-    font-size: 14px;
-    z-index: 1;
+.header-cta i{
+    font-size: 11px;
 }
 .main-nav{
-    margin-left: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     min-width: 0;
 }
 .list{
@@ -916,9 +908,6 @@ body{
     box-shadow: 0 10px 25px rgba(16, 29, 67, .06);
 }
 .team-item2{
-    /* was "margin: 0 5%" from the old float layout — no longer needed now
-       that .team-parent uses CSS grid with its own gap, so it's set to 0
-       to match team-item1/team-item3 and keep the row visually even */
     margin: 0;
 }
 .team-photo{
@@ -1156,12 +1145,15 @@ body{
     .main-nav{
         width: 100%;
         order: 3;
+        position: static;
+        transform: none;
         overflow-x: auto;
         padding-bottom: 2px;
     }
     .list{
-        justify-content: flex-start;
+        justify-content: center;
         width: max-content;
+        margin: 0 auto;
     }
     .home{
         padding-top: 72px;
@@ -1366,22 +1358,6 @@ body{
 @media (max-width: 520px){
     .header-inner{
         width: 90%;
-    }
-    .searchbox{
-        width: 42px;
-        margin-left: auto;
-    }
-    .searchbox input{
-        cursor: pointer;
-        color: transparent;
-        padding: 0;
-    }
-    .searchbox input:focus{
-        width: 180px;
-        position: absolute;
-        right: 0;
-        padding: 0 12px 0 38px;
-        color: #fff;
     }
 }
 
